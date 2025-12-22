@@ -43,7 +43,7 @@ import { clamp, scalerange, randomAdjust, boolToOnOff } from "./pong-util.js";
 var updateInterval = 20; //game framerate
 var game = new Game();
 game.htmlElement = document.getElementById("game");
-var ball = new Ball();
+var ball = new Ball(50);
 ball.htmlElement = document.getElementById("ball");
 ballReset();
 var paddleArray = [];
